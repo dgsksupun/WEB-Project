@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+body{
+    background: rgba(0, 0, 0, 0.8) url(https://images.pexels.com/photos/2292837/pexels-photo-2292837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+nav {
+    display:flex;
+    padding: 20px 0;
+    align-items:center;
+    width: 100%;
+    justify-content: right;
+}
+
+.fb{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.wtzap{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.int{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.git{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #ffffff;
+    transition: width 0.3s;
+
+}
+nav ul li a:hover{
+    color: rgb(243, 106, 14);
+   
+}
+
+nav ul li a:hover::after{
+   width: 50%;
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+    padding: 10px 10%;
+
+}
+main.row{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.col header.title{
+    font-size: 20px;
+    font-family: Helvetica;
+    color: #11a372; 
+    padding: 0px 0px 20px 30px;  
+
+}
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+    color: #ffffff;
+}
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+
+}
+
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+
+}
+
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid white ;
+}
+.box h4{
+    position: relative;
+    color: #11a372;
+
+}
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: Helvetica;
+    color: #a7d3c4;
+}
+
+.box p{
+    line-height: 1.2;
+    color: white;
+    font-size: 17px;
+    
+}
