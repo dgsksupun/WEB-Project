@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url(https://images.pexels.com/photos/3907022/pexels-photo-3907022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+nav {
+    display:flex;
+    padding: 20px 0;
+    align-items:center;
+    width: 100%;
+    justify-content: right;
+}
+
+.fb{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.wtzap{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.int{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.git{
+    width: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #ffffff;
+    transition: width 0.3s;
+
+}
+nav ul li a:hover{
+    color: rgb(243, 106, 14);
+   
+}
+
+nav ul li a:hover::after{
+   width: 50%;
+}
